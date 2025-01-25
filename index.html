@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artsander</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Створюю історії кадр за кадром</h1>
+            <p>Монтаж відео</p>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <p>
+                Мене звати Олександр і я режисер монтажу. Монтую відео з 2016 року для себе та свого ютуб каналу але в
+                2024 вирішив підняти рівень свого хобі до професійного пройшовши курс режисер відеомонтажу у школі
+                "ProCut" під наствництвом Артема Пічака. Зараз отримані знання реалізовую на практиці.
+
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Мої роботи</h2>
+            <div class="portfolio-grid">
+
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-item">
+                        <button id="openModalBtn">Дивитись відео у більшому розмірі</button>
+                        <div class="video-wrapper">
+                            <iframe class="small-video" width="300" height="169"
+                                src="https://www.youtube.com/embed/pMomtvkxwEM?si=YOemSGQN70sYPmHA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="portfolio-item">
+                    <p>тут буде відео</p>
+
+                </div>
+                <div class="portfolio-item">
+                    <p>тут буде відео</p>
+                </div>
+
+                <div id="videoModal" class="modal">
+                    <div class="modal-content">
+                        <span id="closeModalBtn" class="close-btn">&times;</span>
+                        <iframe id="videoIframe" width="100%" height="100%"
+                            src="https://www.youtube.com/embed/pMomtvkxwEM?si=YOemSGQN70sYPmHA" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+
+                </div>
+                <button>показати більше</button>
+            </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Послуги</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Mонтаж відео для Youtube, Shorts, Reels instagram, Tik Tok</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Рекламні проєкти</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Кольорокорекція</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Cаунд дизайн</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Mоушен дизайн</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакти</h2>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Artsander </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
