@@ -1,15 +1,23 @@
-const openModalBtn = document.getElementById("openModalBtn");
-const videoModal = document.getElementById("videoModal");
+const modal = document.getElementById("videoModal");
+const modalVideo = document.getElementById("modalVideo");
 const closeModalBtn = document.getElementById("closeModalBtn");
-const videoIframe = document.getElementById("videoIframe");
 
-openModalBtn.addEventListener("click", function () {
-  videoIframe.src =
-    "https://www.youtube.com/embed/pMomtvkxwEM?si=YOemSGQN70sYPmHA?autoplay=1"; 
-  videoModal.style.display = "flex"; 
+document.querySelectorAll(".openModalBtn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const videoSrc = button.getAttribute("data-video");
+    modalVideo.src = videoSrc;
+    modal.style.display = "flex";
+  });
 });
 
-closeModalBtn.addEventListener("click", function () {
-  videoModal.style.display = "none"; 
-  videoIframe.src = ""; 
+closeModalBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+  modalVideo.src = "";
+});
+
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+    modalVideo.src = "";
+  }
 });
