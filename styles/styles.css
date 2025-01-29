@@ -125,7 +125,7 @@ button {
   align-items: center;
   height: 100vh;
   padding: 0 1rem;
-  margin-top: 56px;
+  /* margin-top: 56px; */
 
   background: url("../assets/images/hero-image.jpg") no-repeat center
     center/cover;
@@ -205,6 +205,17 @@ button {
   padding: 1rem 2rem;
 }
 
+.logo {
+  font-family: Gagalin, sans-serif;
+  font-size: 2rem;
+  color: var(--yellow);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  text-align: right;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
 .burger-menu {
   display: none;
   flex-direction: column;
@@ -235,7 +246,7 @@ button {
 }
 
 .nav-menu li {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .nav-menu a {
