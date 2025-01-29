@@ -455,7 +455,7 @@ button {
   align-items: center;
   padding: 1rem;
   margin: 0 auto;
-  min-height: 100px;
+  min-height: 130px;
   max-width: 280px;
   width: 100%;
   background: var(--white);
