@@ -158,17 +158,37 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .nav .container {
+    padding: 1rem 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav .container {
+    padding: 1rem 3rem;
+  }
 }
 
 .logo {
   font-family: Gagalin, sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--yellow);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
   text-align: right;
   line-height: 1;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    font-size: 2rem;
+  }
 }
 
 .burger-menu {
@@ -267,12 +287,6 @@ button {
   color: var(--white);
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    margin-top: 6px;
-  }
-}
-
 .hero::before {
   content: "";
   position: absolute;
