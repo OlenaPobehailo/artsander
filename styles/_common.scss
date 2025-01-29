@@ -1,0 +1,70 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Gagalin", sans-serif;
+  letter-spacing: 0.1rem;
+  margin: 0 0 1rem;
+}
+
+section {
+  min-height: 50vh;
+  padding: 3rem 0;
+  width: 100%;
+  /* outline: 1px solid red; */
+}
+
+section h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+section:nth-child(odd) {
+  background-color: var(--gray-light);
+}
+
+section:nth-child(even) {
+  background-color: var(--white);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+  @media screen and (min-width: 768px) {
+    padding: 0 2rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 3rem;
+
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+}
