@@ -49,3 +49,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.querySelectorAll(".video-facade").forEach((facade) => {
+  facade.addEventListener("click", () => {
+    const videoId = facade.getAttribute("data-video");
+
+    const iframe = document.createElement("iframe");
+
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`;
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.frameBorder = "0";
+
+    const videoFrame = facade.nextElementSibling;
+
+    videoFrame.innerHTML = "";
+    videoFrame.appendChild(iframe);
+    videoFrame.style.display = "block";
+    facade.style.display = "none";
+  });
+});
