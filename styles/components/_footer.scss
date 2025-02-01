@@ -2,5 +2,7 @@
   text-align: center;
   padding: 1rem;
   background: var(--gray-dark);
-  color: var(--white);
+  p {
+    color: var(--yellow);
+  }
 }

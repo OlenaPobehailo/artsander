@@ -791,5 +791,7 @@ button {
   text-align: center;
   padding: 1rem;
   background: var(--gray-dark);
-  color: var(--white);
+}
+.footer p {
+  color: var(--yellow);
 }/*# sourceMappingURL=main.css.map */
