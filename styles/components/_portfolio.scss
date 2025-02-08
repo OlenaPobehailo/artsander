@@ -43,7 +43,12 @@
   border-left: 3px solid var(--yellow);
   border-bottom: 3px solid var(--yellow);
   box-shadow: $box-shadow-inset;
+
+  font-size: 1rem;
+  font-weight: 500;
   z-index: 1;
+
+  
 
   cursor: pointer;
   transition: all 0.3s ease;
